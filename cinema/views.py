@@ -141,7 +141,7 @@ class OrderViewSet(viewsets.ModelViewSet):
         queryset = (
             super().get_queryset()
             .filter(user=self.request.user)
-            .order_by("user", "-created_at")
+            .order_by("-created_at")
         )
 
         if self.action in ("list", "retrieve"):
