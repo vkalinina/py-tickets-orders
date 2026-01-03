@@ -138,5 +138,5 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
-    "PAGE_SIZE": 5
+    "DEFAULT_PAGINATION_CLASS": None,
 }
